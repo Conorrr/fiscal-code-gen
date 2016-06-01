@@ -1,0 +1,16 @@
+{
+    "name": "Fiscal Code Generator",
+    "description": "Generates a random fiscal code and copies it to your clipboard",
+    "version": "1.0.1",
+    "background": {
+        "page": "background.html"
+    },
+    "browser_action": {
+        "default_title": "Generate random fiscale code",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "manifest_version": 2
+}
