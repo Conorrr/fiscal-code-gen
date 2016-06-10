@@ -70,7 +70,7 @@ var generateRandomFiscalCode = function() {
 	fiscaleCode += generateRandomName();
 	fiscaleCode += leftPad(generateYearOfBirth()); // year of birth
 	fiscaleCode += MONTHS[generateRandomInteger(12)]; // month of birth
-	fiscaleCode += leftPad(generateRandomInteger(28) + (generateRandomInteger(1) * 31)) // day of birth and gender
+	fiscaleCode += leftPad(generateRandomInteger(27) + 1 + (generateRandomInteger(1) * 31)) // day of birth and gender
 	fiscaleCode += TOWNS[generateRandomInteger(8092)]; // towns
 
 	fiscaleCode += calculateCheckCharacter(fiscaleCode);
